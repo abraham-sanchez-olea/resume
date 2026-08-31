@@ -1,0 +1,203 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Abraham Sanchez Olea",
+    "label": "Senior Software Engineer — Distributed systems, .NET, cloud & LLMOps",
+    "email": "abrsanchez@gmail.com",
+    "url": "https://github.com/abrsanchezolea",
+    "summary": "Senior Software Engineer with 18+ years designing, building, and operating enterprise backend systems and distributed architectures. Core strength is taking complex, high-throughput domains—logistics, tax/compliance, GIS, health-tech, and LLM platforms—from design through production. Specializes in resilient .NET systems, event-driven microservices, multi-cloud (Azure, GCP, AWS), and LLMOps: observability for agents and workflows (Langfuse, distributed tracing) and RAG on Azure OpenAI.",
+    "location": {
+      "city": "Guadalajara",
+      "region": "Jalisco",
+      "countryCode": "MX"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "abraham-sanchez-olea-472b97b",
+        "url": "https://www.linkedin.com/in/abraham-sanchez-olea-472b97b"
+      },
+      {
+        "network": "GitHub",
+        "username": "abrsanchezolea",
+        "url": "https://github.com/abrsanchezolea"
+      },
+      {
+        "network": "GitHub Organization",
+        "username": "abraham-sanchez-olea",
+        "url": "https://github.com/abraham-sanchez-olea"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "GlobalLogic",
+      "position": "Integration Engineer",
+      "url": "https://www.globallogic.com",
+      "startDate": "2025-12",
+      "location": "Mexico",
+      "summary": "Enterprise monitoring and observability for LLM applications, LangFlow workflows, and MCP components; RAG on Azure OpenAI.",
+      "highlights": [
+        "Designed a distributed observability architecture for high-throughput agent activity, workflow execution, and operational metrics.",
+        "Integrated Langfuse as the primary telemetry source (spans, events, prompts, errors) for real-time health scoring and latency trends.",
+        "Implemented structured logging, distributed tracing, and correlation IDs across microservices and AI components.",
+        "Built a RAG system on Azure OpenAI: multi-format ingestion (PDF, DOCX), chunking, metadata enrichment, vector storage, and prompt-chaining.",
+        "Delivered analytical dashboards and alerting rules for agent reliability and downtime risk."
+      ]
+    },
+    {
+      "name": "Charger Logistics Inc.",
+      "position": "Sr Software Engineer",
+      "url": "https://www.chargerlogistics.com",
+      "startDate": "2022-07",
+      "endDate": "2025-10",
+      "location": "Canada",
+      "summary": "Senior backend engineer on transportation/logistics platforms: fleet, driver, truck, and load management.",
+      "highlights": [
+        "Led microservices design for load management across multiple vendor companies.",
+        "Built LoadPosting, the service that publishes trips for rating and assignment by driver companies.",
+        "Designed Platform Science microservices consuming trailer telemetry (temperature, GPS, fuel) for real-time tracking.",
+        "Designed Nugget packages for multi-cloud AppSettings and file storage across Azure, GCP, and AWS.",
+        "Mentored and enforced technical consistency across multi-service workflow projects."
+      ]
+    },
+    {
+      "name": "Nautius International (Freelance)",
+      "position": "Sr Fullstack Developer",
+      "startDate": "2023-02",
+      "endDate": "2025-11",
+      "location": "Long Beach, CA",
+      "summary": "Time Card Management System (Tides) for HR, operations, and payroll. Concurrent with Charger Logistics.",
+      "highlights": [
+        "Implemented .NET 8 business logic for standard hours, overtime, additional hours, and payroll alignment.",
+        "Built Angular modules for employees and HR to view, edit, and approve time cards.",
+        "Reduced payroll processing time by automating previously manual calculations; improved accuracy and auditability."
+      ]
+    },
+    {
+      "name": "Nagarro",
+      "position": "Senior Staff Software Engineer",
+      "url": "https://www.nagarro.com",
+      "startDate": "2021-09",
+      "endDate": "2022-09",
+      "location": "Jalisco, Mexico",
+      "summary": "Senior Staff engineer in a global digital-product engineering organization on enterprise .NET delivery."
+    },
+    {
+      "name": "Dextra Technologies",
+      "position": "Senior Software Engineer",
+      "url": "https://www.dextratechnologies.com",
+      "startDate": "2015-03",
+      "endDate": "2021-02",
+      "location": "Zapopan, Jalisco, Mexico",
+      "summary": "J.J. Keller account: logistics, safety, and compliance products for the US market.",
+      "highlights": [
+        "Owned and supported Encompas, Keller Mobile Web Services, Keller Online, and related logistics applications.",
+        "Delivered IRS Form 2290 heavy-vehicle tax filing: client submission flow plus admin console to push or revoke filings.",
+        "Unit tests as part of feature work; Jenkins ran the suite on every check-in and blocked the build on failure.",
+        "Native Android training to contribute to Keller Mobile; ELD device integrations."
+      ]
+    },
+    {
+      "name": "SisLogic Sistemas Lógicos",
+      "position": "Software Engineer",
+      "startDate": "2009-07",
+      "endDate": "2013-05",
+      "location": "Guadalajara, Jalisco, Mexico",
+      "summary": "GIS and cadastral platforms for Mexican state and municipal governments. Developer and delivery lead.",
+      "highlights": [
+        "SIC (Sistema de Información Catastral) for IGECEM, Estado de México: geographic digitization, cadastral valuation, spatial operations. Rolled out across several Mexican states.",
+        "APASEO cadaster (Guanajuato): shape-file import, cartography digitization, capture forms, spatial-to-tabular binding.",
+        "Oracle Spatial, SQL Server Spatial, Map Suite, PL/SQL, T-SQL, DevExpress, .NET."
+      ]
+    },
+    {
+      "name": "STX",
+      "position": "Web Developer",
+      "startDate": "2006-01",
+      "endDate": "2009-07",
+      "location": "Guadalajara, Jalisco, Mexico",
+      "summary": "Product development, then innovation team that built the company application kernel.",
+      "highlights": [
+        "E-commerce cart and conference/course scheduler (PHP, AJAX, jQuery).",
+        "Core framework for Klaymobile (formerly Poscel) and a POS app with Java applets for ticket printing.",
+        "Joomla-tied CMS used by clients such as PISA; XML/XSLT reporting; Linux bash and cron."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Instituto Tecnológico de Tepic (I.T.R.)",
+      "area": "Ingeniería en Sistemas Computacionales",
+      "studyType": "Licenciatura",
+      "endDate": "2008",
+      "location": "Nayarit, Mexico",
+      "score": "Cédula profesional 5520682"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Exam 762: Developing SQL Databases",
+      "date": "2017-10",
+      "issuer": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/credentials/"
+    },
+    {
+      "name": "Android Expert",
+      "date": "2017-03",
+      "issuer": "DW Mobile Certified"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Backend",
+      "keywords": [".NET", ".NET Core", ".NET 8", "C#", "ASP.NET Web API", "Clean Architecture", "Microservices"]
+    },
+    {
+      "name": "Data",
+      "keywords": ["SQL Server", "PostgreSQL", "MongoDB", "Oracle Spatial", "T-SQL", "ADO.NET"]
+    },
+    {
+      "name": "Messaging & integration",
+      "keywords": ["Apache Kafka", "RabbitMQ", "Redis Streams", "Webhooks", "Ocelot"]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywords": ["Azure", "GCP", "AWS", "Docker", "GitHub Actions", "Jenkins", "CI/CD"]
+    },
+    {
+      "name": "AI / LLMOps",
+      "keywords": ["Azure OpenAI", "RAG", "Langfuse", "LangFlow", "MCP", "Vector databases"]
+    },
+    {
+      "name": "Frontend & mobile",
+      "keywords": ["Angular", "React", "Android", "Kotlin"]
+    }
+  ],
+  "languages": [
+    { "language": "Spanish", "fluency": "Native speaker" },
+    { "language": "English", "fluency": "Professional working proficiency" }
+  ],
+  "projects": [
+    {
+      "name": "AMEFA — Health-tech membership platform",
+      "description": "Personal venture: members, pharmacies, and appointment scheduling as a production-style distributed system (Auth, Payments, Pharmacy, Appointments, Gateway, Android, React). Redis Streams, JWT/2FA, Stripe, Docker Compose, GitHub Actions, DigitalOcean, PostgreSQL.",
+      "keywords": ["Microservices", ".NET 8", "Stripe", "Redis Streams", "Kotlin", "React", "Docker"]
+    },
+    {
+      "name": "TraceSuite",
+      "description": "Observability platform for APIs, workers, and event-driven services: Gateway, Auth, Payments, Events, Workers, Android, and web.",
+      "keywords": ["Observability", ".NET", "Microservices"]
+    },
+    {
+      "name": "Tides — Time cards",
+      "description": "Time Card Management System for Nautius International: .NET 8 + Angular, overtime and payroll calculation, HR approval workflows.",
+      "keywords": [".NET 8", "Angular", "Payroll"]
+    }
+  ],
+  "meta": {
+    "canonical": "https://github.com/abraham-sanchez-olea/resume",
+    "version": "1.0.0",
+    "lastModified": "2026-08-31T00:00:00.000Z"
+  }
+}

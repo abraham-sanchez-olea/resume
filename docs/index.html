@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abraham Sanchez Olea — Resume</title>
+  <meta name="description" content="Senior Software Engineer with 18+ years in .NET, distributed systems, cloud, and LLMOps. Guadalajara, Mexico." />
+  <meta name="author" content="Abraham Sanchez Olea" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1c1917;
+      --muted: #57534e;
+      --rule: #e7e5e4;
+      --paper: #fafaf9;
+      --accent: #1f4d47;
+      --accent-soft: #e8f0ef;
+      --chip: #f5f5f4;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); }
+    body {
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      font-size: 14.5px;
+      line-height: 1.55;
+    }
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 20px;
+      background: #fff;
+      border-bottom: 1px solid var(--rule);
+    }
+    .toolbar strong { font-size: 13px; letter-spacing: 0.02em; }
+    .toolbar .actions { display: flex; gap: 8px; align-items: center; }
+    button, .btn {
+      font: inherit;
+      font-size: 12.5px;
+      font-weight: 500;
+      border: 1px solid var(--rule);
+      background: #fff;
+      color: var(--ink);
+      padding: 6px 11px;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    button.active, .lang button.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .page {
+      max-width: 860px;
+      margin: 28px auto 64px;
+      padding: 0 20px;
+    }
+    header.mast {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: end;
+      padding-bottom: 22px;
+      border-bottom: 2px solid var(--ink);
+    }
+    h1 {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 34px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin: 0 0 4px;
+      line-height: 1.15;
+    }
+    .title {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 15px;
+      margin: 0 0 8px;
+    }
+    .contacts {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 13px;
+      color: var(--muted);
+      text-align: right;
+    }
+    .contacts a { color: var(--accent); text-decoration: none; }
+    .contacts li { margin: 2px 0; }
+    h2 {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 26px 0 10px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .summary { margin: 16px 0 0; color: var(--ink); }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .chips li {
+      background: var(--chip);
+      border: 1px solid var(--rule);
+      padding: 3px 8px;
+      font-size: 12px;
+      border-radius: 3px;
+    }
+    .job { margin: 0 0 18px; }
+    .job-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+    .job h3 {
+      font-size: 15.5px;
+      font-weight: 600;
+      margin: 0;
+    }
+    .job h3 span { font-weight: 500; color: var(--muted); }
+    .when {
+      font-size: 12.5px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .job p { margin: 4px 0 6px; color: var(--muted); font-size: 13.5px; }
+    .job ul { margin: 0; padding-left: 18px; }
+    .job li { margin: 3px 0; }
+    .two {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+    }
+    .meta p { margin: 0 0 8px; }
+    .note { font-size: 12.5px; color: var(--muted); margin-top: 28px; }
+    [hidden] { display: none !important; }
+    @media (max-width: 700px) {
+      header.mast, .two, .job-head { grid-template-columns: 1fr; }
+      .contacts { text-align: left; }
+      h1 { font-size: 28px; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11.5px; }
+      .toolbar { display: none; }
+      .page { margin: 0; max-width: none; padding: 0; }
+      a { color: inherit; text-decoration: none; }
+      h2 { margin-top: 14px; }
+      .job { margin-bottom: 10px; break-inside: avoid; }
+      .note { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <strong>Abraham Sanchez Olea</strong>
+    <div class="actions">
+      <span class="lang">
+        <button type="button" id="btn-en" class="active" onclick="setLang('en')">EN</button>
+        <button type="button" id="btn-es" onclick="setLang('es')">ES</button>
+      </span>
+      <button type="button" onclick="window.print()">Print / PDF</button>
+      <a class="btn" href="https://github.com/abraham-sanchez-olea/resume">GitHub</a>
+    </div>
+  </div>
+
+  <main class="page">
+    <article id="en">
+      <header class="mast">
+        <div>
+          <h1>Abraham Sanchez Olea</h1>
+          <p class="title">Senior Software Engineer · Distributed systems, .NET, cloud &amp; LLMOps</p>
+        </div>
+        <ul class="contacts">
+          <li>Guadalajara, Mexico</li>
+          <li><a href="mailto:abrsanchez@gmail.com">abrsanchez@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/abraham-sanchez-olea-472b97b">linkedin.com/in/abraham-sanchez-olea-472b97b</a></li>
+          <li><a href="https://github.com/abrsanchezolea">github.com/abrsanchezolea</a></li>
+        </ul>
+      </header>
+
+      <h2>Summary</h2>
+      <p class="summary">
+        Senior Software Engineer with 18+ years designing, building, and operating enterprise backend
+        systems and distributed architectures. I take complex, high-throughput domains—logistics,
+        tax/compliance, GIS, health-tech, and LLM platforms—from design through production.
+        Core craft is resilient .NET: Clean Architecture, microservices, event-driven integration
+        (Kafka, RabbitMQ, Redis Streams), and serious data work (SQL Server, PostgreSQL, MongoDB, Oracle Spatial).
+        That foundation now includes multi-cloud (Azure, GCP, AWS) and LLMOps: observability for agents
+        and workflows (Langfuse, distributed tracing, alerting) and RAG systems on Azure OpenAI.
+      </p>
+
+      <h2>Core stack</h2>
+      <ul class="chips">
+        <li>C# / .NET 8</li><li>SQL Server</li><li>PostgreSQL</li><li>MongoDB</li>
+        <li>Kafka</li><li>Redis Streams</li><li>Azure</li><li>GCP / AWS</li>
+        <li>Docker</li><li>GitHub Actions</li><li>Langfuse</li><li>Azure OpenAI / RAG</li>
+        <li>MCP</li><li>Angular</li><li>React</li><li>Android / Kotlin</li>
+        <li>Stripe</li><li>Ocelot</li>
+      </ul>
+
+      <h2>Experience</h2>
+
+      <section class="job">
+        <div class="job-head">
+          <h3>Integration Engineer <span>· GlobalLogic</span></h3>
+          <div class="when">Dec 2025 – Present · Mexico</div>
+        </div>
+        <p>Enterprise monitoring &amp; observability for LLM apps, LangFlow workflows, and MCP components.</p>
+        <ul>
+          <li>Distributed observability architecture for high-throughput agent activity, workflow execution, and operational metrics.</li>
+          <li>Langfuse as primary telemetry source (spans, events, prompts, errors) for real-time health scoring and latency trends.</li>
+          <li>Structured logging, distributed tracing, and correlation IDs across microservices and AI components.</li>
+          <li>RAG on Azure OpenAI: multi-format ingestion (PDF, DOCX), chunking, metadata enrichment, vector storage, prompt-chaining.</li>
+          <li>Analytical dashboards and alerting rules for agent reliability and downtime risk.</li>
+        </ul>
+      </section>
+
+      <section class="job">
+        <div class="job-head">
+          <h3>Sr Software Engineer <span>· Charger Logistics Inc.</span></h3>
+          <div class="when">Jul 2022 – Oct 2025 · Canada</div>
+        </div>
+        <p>Transportation platforms: fleet, driver, truck, and load management. Backend lead across multiple services.</p>
+        <ul>
+          <li>Microservices architecture for load management across multiple vendor companies.</li>
+          <li>LoadPosting service: publish trips for rating and assignment by driver companies.</li>
+          <li>Platform Science microservices consuming trailer telemetry (temperature, GPS, fuel) for real-time tracking.</li>
+          <li>Nugget packages for multi-cloud AppSettings and file storage across Azure, GCP, and AWS.</li>
+          <li>Mentoring and technical consistency on multi-service workflow projects. Kafka (Confluent), MongoDB, SQL Server, .NET Core.</li>
+        </ul>
+      </section>
+
+      <section class="job">
+        <div class="job-head">
+          <h3>Sr Fullstack Developer <span>· Freelance, Nautius International</span></h3>
+          <div class="when">Feb 2023 – Nov 2025 · Long Beach, CA</div>
+        </div>
+        <p>Time Card Management System (Tides). Concurrent with Charger Logistics.</p>
+        <ul>
+          <li>.NET 8 backend for standard hours, overtime, additional hours, and payroll alignment with labor policy.</li>
+          <li>Angular modules for employees and HR to view, edit, and approve time cards.</li>
+          <li>Reduced payroll processing time by automating previously manual calculations; improved accuracy and audit-ready reporting.</li>
+        </ul>
+      </section>
+
+      <section class="job">
+        <div class="job-head">
+          <h3>Senior Staff Software Engineer <span>· Nagarro</span></h3>
+          <div class="when">Sep 2021 – Sep 2022 · Jalisco, Mexico</div>
+        </div>
+        <p>Senior Staff engineer in a global digital-product engineering organization on enterprise .NET delivery.</p>
+      </section>
+
+      <section class="job">
+        <div class="job-head">
+          <h3>Senior Software Engineer <span>· Dextra Technologies (J.J. Keller)</span></h3>
+          <div class="when">Mar 2015 – Feb 2021 · Zapopan, Mexico</div>
+        </div>
+        <p>Six years on J.J. Keller logistics, safety, and compliance products for the US market.</p>
+        <ul>
+          <li>Encompas, Keller Mobile Web Services, Keller Online, and related logistics/services applications.</li>
+          <li>IRS Form 2290 heavy-vehicle tax filing: client submission flow plus admin console to push or revoke filings.</li>
+          <li>Unit tests as part of feature work; Jenkins on every check-in, build blocked on failure. ELD integrations; Android for Keller Mobile.</li>
+        </ul>
+      </section>
+
+      <section class="job">
+        <div class="job-head">
+          <h3>Software Engineer <span>· SisLogic Sistemas Lógicos</span></h3>
+          <div class="when">Jul 2009 – May 2013 · Guadalajara, Mexico</div>
+        </div>
+        <p>GIS / cadastral platforms for Mexican governments. Developer and delivery lead.</p>
+        <ul>
+          <li>SIC for IGECEM (Estado de México): geographic digitization, cadastral valuation, spatial operations. Rolled out across several states.</li>
+          <li>APASEO cadaster (Guanajuato): shape-file import, cartography digitization, capture forms, spatial-to-tabular binding.</li>
+          <li>Oracle Spatial, SQL Server Spatial, Map Suite, PL/SQL, T-SQL, DevExpress, .NET.</li>
+        </ul>
+      </section>
+
+      <section class="job">
+        <div class="job-head">
+          <h3>Web Developer <span>· STX</span></h3>
+          <div class="when">Jan 2006 – Jul 2009 · Guadalajara, Mexico</div>
+        </div>
+        <p>Product development, then the innovation team that built the company application kernel (Klaymobile / Poscel), POS printing applets, Joomla CMS (PISA), XML/XSLT reporting, bash/cron.</p>
+      </section>
+
+      <h2>Selected projects</h2>
+      <section class="job">
+        <h3>AMEFA — Health-tech membership platform <span>· personal venture</span></h3>
+        <p>Members, pharmacies, and appointments as a production-style distributed system: Auth, Payments (Stripe), Pharmacy, Appointments, Ocelot gateway, Redis Streams, JWT/2FA, Android (Kotlin), React/Vite, Docker Compose, GitHub Actions, DigitalOcean, PostgreSQL.</p>
+      </section>
+      <section class="job">
+        <h3>TraceSuite — Observability platform</h3>
+        <p>Gateway, Auth, Payments, Events, Workers, Android, and web—operational discipline for tracing APIs and event-driven services.</p>
+      </section>
+
+      <div class="two">
+        <div>
+          <h2>Education</h2>
+          <p><strong>Licenciatura en Ingeniería en Sistemas Computacionales</strong><br />
+          Instituto Tecnológico de Tepic (I.T.R.) · Nayarit, Mexico · 2008<br />
+          Cédula profesional 5520682</p>
+        </div>
+        <div class="meta">
+          <h2>Certifications</h2>
+          <p><strong>Microsoft Exam 762</strong> — Developing SQL Databases (Oct 2017, ID 14881679)</p>
+          <p><strong>Android Expert</strong> — DW Mobile Certified (Mar 2017)</p>
+          <h2>Languages</h2>
+          <p>Spanish — native<br />English — professional working proficiency</p>
+        </div>
+      </div>
+      <p class="note">Source: github.com/abraham-sanchez-olea/resume · Print this page to PDF.</p>
+    </article>
+
+    <article id="es" hidden>
+      <header class="mast">
+        <div>
+          <h1>Abraham Sanchez Olea</h1>
+          <p class="title">Ingeniero de software senior · Sistemas distribuidos, .NET, nube y LLMOps</p>
+        </div>
+        <ul class="contacts">
+          <li>Guadalajara, México</li>
+          <li><a href="mailto:abrsanchez@gmail.com">abrsanchez@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/abraham-sanchez-olea-472b97b">linkedin.com/in/abraham-sanchez-olea-472b97b</a></li>
+          <li><a href="https://github.com/abrsanchezolea">github.com/abrsanchezolea</a></li>
+        </ul>
+      </header>
+
+      <h2>Perfil</h2>
+      <p class="summary">
+        Ingeniero de software senior con más de 18 años diseñando, construyendo y operando sistemas
+        backend empresariales y arquitecturas distribuidas. Llevo dominios complejos y de alto volumen—logística,
+        cumplimiento fiscal, GIS, health-tech y plataformas LLM—desde el diseño hasta producción.
+        El oficio central es .NET resiliente: Clean Architecture, microservicios, integración dirigida por eventos
+        (Kafka, RabbitMQ, Redis Streams) y trabajo serio con datos (SQL Server, PostgreSQL, MongoDB, Oracle Spatial).
+        Esa base incluye hoy multi-nube (Azure, GCP, AWS) y LLMOps: observabilidad de agentes y flujos
+        (Langfuse, tracing distribuido, alerting) y sistemas RAG sobre Azure OpenAI.
+      </p>
+
+      <h2>Stack principal</h2>
+      <ul class="chips">
+        <li>C# / .NET 8</li><li>SQL Server</li><li>PostgreSQL</li><li>MongoDB</li>
+        <li>Kafka</li><li>Redis Streams</li><li>Azure</li><li>GCP / AWS</li>
+        <li>Docker</li><li>GitHub Actions</li><li>Langfuse</li><li>Azure OpenAI / RAG</li>
+        <li>MCP</li><li>Angular</li><li>React</li><li>Android / Kotlin</li>
+        <li>Stripe</li><li>Ocelot</li>
+      </ul>
+
+      <h2>Experiencia</h2>
+
+      <section class="job">
+        <div class="job-head">
+          <h3>Integration Engineer <span>· GlobalLogic</span></h3>
+          <div class="when">Dic 2025 – Actualidad · México</div>
+        </div>
+        <p>Monitoreo y observabilidad empresarial para apps LLM, flujos LangFlow y componentes MCP.</p>
+        <ul>
+          <li>Arquitectura distribuida de observabilidad para actividad de agentes de alto volumen, workflows y métricas operativas.</li>
+          <li>Langfuse como fuente primaria de telemetría (spans, eventos, prompts, errores) para health scoring y latencia en tiempo real.</li>
+          <li>Logging estructurado, tracing distribuido y correlation IDs entre microservicios y componentes de IA.</li>
+          <li>RAG sobre Azure OpenAI: ingesta multi-formato (PDF, DOCX), chunking, metadatos, almacenamiento vectorial, prompt-chaining.</li>
+          <li>Tableros analíticos y reglas de alerta para confiabilidad de agentes y riesgo de downtime.</li>
+        </ul>
+      </section>
+
+      <section class="job">
+        <div class="job-head">
+          <h3>Sr Software Engineer <span>· Charger Logistics Inc.</span></h3>
+          <div class="when">Jul 2022 – Oct 2025 · Canadá</div>
+        </div>
+        <p>Plataformas de transporte: flota, operadores, tractos y gestión de cargas. Liderazgo backend entre varios servicios.</p>
+        <ul>
+          <li>Arquitectura de microservicios para gestión de cargas entre múltiples compañías vendor.</li>
+          <li>Servicio LoadPosting: publicación de viajes para rating y asignación por compañías de operadores.</li>
+          <li>Microservicios Platform Science con telemetría de trailers (temperatura, GPS, combustible) para tracking en tiempo real.</li>
+          <li>Paquetes Nugget para AppSettings y almacenamiento multi-nube en Azure, GCP y AWS.</li>
+          <li>Mentoring y consistencia técnica. Kafka (Confluent), MongoDB, SQL Server, .NET Core.</li>
+        </ul>
+      </section>
+
+      <section class="job">
+        <div class="job-head">
+          <h3>Sr Fullstack Developer <span>· Freelance, Nautius International</span></h3>
+          <div class="when">Feb 2023 – Nov 2025 · Long Beach, CA</div>
+        </div>
+        <p>Sistema de time cards (Tides). En paralelo con Charger Logistics.</p>
+        <ul>
+          <li>Backend .NET 8 para horas estándar, overtime, horas adicionales y alineación con política laboral.</li>
+          <li>Módulos Angular para que empleados y RH vean, editen y aprueben tarjetas de tiempo.</li>
+          <li>Reducción del tiempo de nómina al automatizar cálculos manuales; más exactitud y reportes auditables.</li>
+        </ul>
+      </section>
+
+      <section class="job">
+        <div class="job-head">
+          <h3>Senior Staff Software Engineer <span>· Nagarro</span></h3>
+          <div class="when">Sep 2021 – Sep 2022 · Jalisco, México</div>
+        </div>
+        <p>Ingeniero Senior Staff en una organización global de ingeniería de producto digital, en entregas empresariales .NET.</p>
+      </section>
+
+      <section class="job">
+        <div class="job-head">
+          <h3>Senior Software Engineer <span>· Dextra Technologies (J.J. Keller)</span></h3>
+          <div class="when">Mar 2015 – Feb 2021 · Zapopan, México</div>
+        </div>
+        <p>Seis años en productos J.J. Keller de logística, seguridad y cumplimiento para el mercado de EE. UU.</p>
+        <ul>
+          <li>Encompas, Keller Mobile Web Services, Keller Online y aplicaciones relacionadas.</li>
+          <li>IRS Form 2290: flujo cliente de filing más consola admin para empujar o revocar trámites.</li>
+          <li>Pruebas unitarias en cada feature; Jenkins en cada check-in. Integraciones ELD; Android para Keller Mobile.</li>
+        </ul>
+      </section>
+
+      <section class="job">
+        <div class="job-head">
+          <h3>Software Engineer <span>· SisLogic Sistemas Lógicos</span></h3>
+          <div class="when">Jul 2009 – May 2013 · Guadalajara, México</div>
+        </div>
+        <p>Plataformas GIS / catastrales para gobiernos mexicanos. Desarrollador y responsable de entrega.</p>
+        <ul>
+          <li>SIC para IGECEM (Estado de México): digitalización geográfica, valuación catastral, operaciones espaciales. Varios estados.</li>
+          <li>Catastro APASEO (Guanajuato): shape files, digitalización cartográfica, formularios, amarre espacial-tabular.</li>
+          <li>Oracle Spatial, SQL Server Spatial, Map Suite, PL/SQL, T-SQL, DevExpress, .NET.</li>
+        </ul>
+      </section>
+
+      <section class="job">
+        <div class="job-head">
+          <h3>Web Developer <span>· STX</span></h3>
+          <div class="when">Ene 2006 – Jul 2009 · Guadalajara, México</div>
+        </div>
+        <p>Desarrollo de producto y luego el equipo de innovación del kernel (Klaymobile / Poscel), applets de impresión POS, CMS Joomla (PISA), reportes XML/XSLT, bash/cron.</p>
+      </section>
+
+      <h2>Proyectos seleccionados</h2>
+      <section class="job">
+        <h3>AMEFA — Plataforma de membresías health-tech <span>· emprendimiento personal</span></h3>
+        <p>Membresías, farmacias y citas como sistema distribuido de estilo producción: Auth, Payments (Stripe), Pharmacy, Appointments, gateway Ocelot, Redis Streams, JWT/2FA, Android (Kotlin), React/Vite, Docker Compose, GitHub Actions, DigitalOcean, PostgreSQL.</p>
+      </section>
+      <section class="job">
+        <h3>TraceSuite — Plataforma de observabilidad</h3>
+        <p>Gateway, Auth, Payments, Events, Workers, Android y web—disciplina operacional para trazar APIs y servicios dirigidos por eventos.</p>
+      </section>
+
+      <div class="two">
+        <div>
+          <h2>Educación</h2>
+          <p><strong>Licenciatura en Ingeniería en Sistemas Computacionales</strong><br />
+          Instituto Tecnológico de Tepic (I.T.R.) · Nayarit, México · 2008<br />
+          Cédula profesional 5520682</p>
+        </div>
+        <div class="meta">
+          <h2>Certificaciones</h2>
+          <p><strong>Microsoft Exam 762</strong> — Developing SQL Databases (oct 2017, ID 14881679)</p>
+          <p><strong>Android Expert</strong> — DW Mobile Certified (mar 2017)</p>
+          <h2>Idiomas</h2>
+          <p>Español — nativo<br />Inglés — competencia profesional de trabajo</p>
+        </div>
+      </div>
+      <p class="note">Fuente: github.com/abraham-sanchez-olea/resume · Imprime esta página a PDF.</p>
+    </article>
+  </main>
+
+  <script>
+    function setLang(lang) {
+      var en = document.getElementById("en");
+      var es = document.getElementById("es");
+      var btnEn = document.getElementById("btn-en");
+      var btnEs = document.getElementById("btn-es");
+      var isEs = lang === "es";
+      en.hidden = isEs;
+      es.hidden = !isEs;
+      btnEn.classList.toggle("active", !isEs);
+      btnEs.classList.toggle("active", isEs);
+      document.documentElement.lang = isEs ? "es" : "en";
+      try { localStorage.setItem("resume-lang", lang); } catch (e) {}
+    }
+    (function () {
+      var q = new URLSearchParams(location.search).get("lang");
+      var stored = null;
+      try { stored = localStorage.getItem("resume-lang"); } catch (e) {}
+      setLang(q || stored || "en");
+    })();
+  </script>
+</body>
+</html>
