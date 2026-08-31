@@ -3,7 +3,9 @@
 **Senior Software Engineer** · Distributed systems, .NET, cloud & LLMOps  
 Guadalajara, Mexico Metropolitan Area
 
-[LinkedIn](https://www.linkedin.com/in/abraham-sanchez-olea-472b97b) · [GitHub](https://github.com/abrsanchezolea) · [abrsanchez@gmail.com](mailto:abrsanchez@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/abraham-sanchez-olea-472b97b) · [GitHub profile](https://github.com/abrsanchezolea) · [abrsanchez@gmail.com](mailto:abrsanchez@gmail.com)
+
+**Public work on GitHub:** [Profile + AMEFA](https://github.com/abrsanchezolea) · [AMEFA architecture (services, clients, flows)](https://github.com/abrsanchezolea/AMEFA-platform)
 
 **[Interactive resume (EN/ES)](https://abraham-sanchez-olea.github.io/resume/)** · **[Versión en español](RESUME.es.md)** · **[JSON Resume](resume.json)**
 
@@ -118,6 +120,9 @@ Started in product development and moved into the innovation team that built the
 ## Selected projects
 
 ### AMEFA — Health-tech membership platform *(personal venture)*
+
+**Public docs:** [AMEFA-platform](https://github.com/abrsanchezolea/AMEFA-platform) · shown on [github.com/abrsanchezolea](https://github.com/abrsanchezolea)
+
 Multi-platform system connecting members with medical memberships, pharmacies, and appointment scheduling. Designed as a production-style distributed system, currently in testing.
 
 - Bounded-context microservices: Auth, Payments, Pharmacy, Appointments, Core API, plus API Gateway (Ocelot).
@@ -126,6 +131,7 @@ Multi-platform system connecting members with medical memberships, pharmacies, a
 - Android (Kotlin) + React/Vite web client.
 - Docker Compose orchestration, GitHub Actions CI/CD, DigitalOcean VPS, PostgreSQL (Neon).
 - Health/readiness endpoints (`/alive`, `/health`, `/ready`) per service.
+- Full service catalog, sequence diagrams, and UI illustrations are in the public architecture repo (source remains private).
 
 ### TraceSuite — Observability platform
 Platform for tracing and operating APIs, workers, and event-driven services: Gateway, Auth, Payments, Events, Workers, Android, and web clients—same operational discipline as the LLM observability work (secrets packages, event bus, orchestration).

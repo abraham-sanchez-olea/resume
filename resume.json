@@ -172,7 +172,8 @@
   "projects": [
     {
       "name": "AMEFA — Health-tech membership platform",
-      "description": "Personal venture: members, pharmacies, and appointment scheduling as a production-style distributed system (Auth, Payments, Pharmacy, Appointments, Gateway, Android, React). Redis Streams, JWT/2FA, Stripe, Docker Compose, GitHub Actions, DigitalOcean, PostgreSQL.",
+      "description": "Personal venture: members, pharmacies, and appointment scheduling as a production-style distributed system (Auth, Payments, Pharmacy, Appointments, Gateway, Android, React). Redis Streams, JWT/2FA, Stripe, Docker Compose, GitHub Actions, DigitalOcean, PostgreSQL. Public architecture: https://github.com/abrsanchezolea/AMEFA-platform — also featured on https://github.com/abrsanchezolea",
+      "url": "https://github.com/abrsanchezolea/AMEFA-platform",
       "keywords": ["Microservices", ".NET 8", "Stripe", "Redis Streams", "Kotlin", "React", "Docker"]
     },    
     {

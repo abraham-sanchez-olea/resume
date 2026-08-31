@@ -3,7 +3,9 @@
 **Ingeniero de software senior** · Sistemas distribuidos, .NET, nube y LLMOps  
 Zona metropolitana de Guadalajara, México
 
-[LinkedIn](https://www.linkedin.com/in/abraham-sanchez-olea-472b97b) · [GitHub](https://github.com/abrsanchezolea) · [abrsanchez@gmail.com](mailto:abrsanchez@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/abraham-sanchez-olea-472b97b) · [Perfil GitHub](https://github.com/abrsanchezolea) · [abrsanchez@gmail.com](mailto:abrsanchez@gmail.com)
+
+**Trabajo público en GitHub:** [Perfil + AMEFA](https://github.com/abrsanchezolea) · [Arquitectura AMEFA (servicios, clientes, flujos)](https://github.com/abrsanchezolea/AMEFA-platform)
 
 **[Currículum interactivo (EN/ES)](https://abraham-sanchez-olea.github.io/resume/)** · **[English resume](README.md)** · **[JSON Resume](resume.json)**
 
@@ -118,6 +120,9 @@ Inicié en desarrollo de producto y pasé al equipo de innovación que construy�
 ## Proyectos seleccionados
 
 ### AMEFA — Plataforma de membresías health-tech *(emprendimiento personal)*
+
+**Docs públicos:** [AMEFA-platform](https://github.com/abrsanchezolea/AMEFA-platform) · visible en [github.com/abrsanchezolea](https://github.com/abrsanchezolea)
+
 Sistema multi-plataforma que conecta usuarios con membresías médicas, farmacias y agendado de citas. Diseñado como sistema distribuido de estilo producción; en fase de pruebas.
 
 - Microservicios por bounded context: Auth, Payments, Pharmacy, Appointments, Core API, más API Gateway (Ocelot).
