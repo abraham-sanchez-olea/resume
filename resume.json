@@ -5,7 +5,7 @@
     "label": "Senior Software Engineer — Distributed systems, .NET, cloud & LLMOps",
     "email": "abrsanchez@gmail.com",
     "url": "https://github.com/abrsanchezolea",
-    "summary": "Senior Software Engineer with 18+ years designing, building, and operating enterprise backend systems and distributed architectures. Core strength is taking complex, high-throughput domains—logistics, tax/compliance, GIS, health-tech, and LLM platforms—from design through production. Specializes in resilient .NET systems, event-driven microservices, multi-cloud (Azure, GCP, AWS), and LLMOps: observability for agents and workflows (Langfuse, distributed tracing) and RAG on Azure OpenAI.",
+    "summary": "Senior Software Engineer with 16+ years designing, building, and operating enterprise backend systems and distributed architectures. Core strength is taking complex, high-throughput domains—logistics, tax/compliance, GIS, health-tech, and LLM platforms—from design through production. Specializes in resilient .NET systems, event-driven microservices, multi-cloud (Azure, GCP, AWS), and LLMOps: observability for agents and workflows (Langfuse, distributed tracing) and RAG on Azure OpenAI.",
     "location": {
       "city": "Guadalajara",
       "region": "Jalisco",
@@ -47,7 +47,7 @@
     },
     {
       "name": "Charger Logistics Inc.",
-      "position": "Sr Software Engineer",
+      "position": "Tech Lead / Sr Software Engineer",
       "url": "https://www.chargerlogistics.com",
       "startDate": "2022-07",
       "endDate": "2025-10",
