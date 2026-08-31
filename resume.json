@@ -73,16 +73,7 @@
         "Built Angular modules for employees and HR to view, edit, and approve time cards.",
         "Reduced payroll processing time by automating previously manual calculations; improved accuracy and auditability."
       ]
-    },
-    {
-      "name": "Nagarro",
-      "position": "Senior Staff Software Engineer",
-      "url": "https://www.nagarro.com",
-      "startDate": "2021-09",
-      "endDate": "2022-09",
-      "location": "Jalisco, Mexico",
-      "summary": "Senior Staff engineer in a global digital-product engineering organization on enterprise .NET delivery."
-    },
+    },  
     {
       "name": "Dextra Technologies",
       "position": "Senior Software Engineer",
@@ -183,12 +174,7 @@
       "name": "AMEFA — Health-tech membership platform",
       "description": "Personal venture: members, pharmacies, and appointment scheduling as a production-style distributed system (Auth, Payments, Pharmacy, Appointments, Gateway, Android, React). Redis Streams, JWT/2FA, Stripe, Docker Compose, GitHub Actions, DigitalOcean, PostgreSQL.",
       "keywords": ["Microservices", ".NET 8", "Stripe", "Redis Streams", "Kotlin", "React", "Docker"]
-    },
-    {
-      "name": "TraceSuite",
-      "description": "Observability platform for APIs, workers, and event-driven services: Gateway, Auth, Payments, Events, Workers, Android, and web.",
-      "keywords": ["Observability", ".NET", "Microservices"]
-    },
+    },    
     {
       "name": "Tides — Time cards",
       "description": "Time Card Management System for Nautius International: .NET 8 + Angular, overtime and payroll calculation, HR approval workflows.",
